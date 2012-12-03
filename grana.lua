@@ -262,7 +262,7 @@ function grana.method:log_write()
 			end
 		end
 	else
-		local arquivo = io.open(grana.datadir .. self.arquivo .. ".log", "ab")
+		local arquivo = io.open(grana.datadir .. self.arquivo .. "-" .. os.date("%F") .. ".log", "ab")
 		if grana.key then
 			arquivo:write("\nConta Grana Log\n")
 			arquivo:write(md5.crypt(self.log_msg, grana.key))
