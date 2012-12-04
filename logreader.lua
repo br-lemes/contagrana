@@ -30,7 +30,7 @@ function grana.logreader.make(alvo, titulo)
 	else
 		grana.logreader.dialog.title = "Log"
 	end
-	local arquivo = io.open(grana.datadir .. alvo.arquivo .. "-" .. os.date("%F") .. ".log", "rb")
+	local arquivo = io.open(grana.datadir .. alvo.arquivo .. "-" .. os.date("%Y-%m-%d") .. ".log", "rb")
 	local logstr = arquivo:read("*a")
 	arquivo:close()
 	if grana.key then
