@@ -25,7 +25,7 @@ grana.troca.tabs        = iup.tabs{
 	}
 }
 
-grana.troca.dialog      = iup.dialog{title="Troca", size=grana.size; startfocus=grana.troca.entrada_cmd;
+grana.troca.dialog      = iup.dialog{title="Troca", rastersize=grana.rastersize; startfocus=grana.troca.entrada_cmd;
 	iup.vbox{margin="10x10", gap="10"; grana.troca.tabs, grana.troca.saldo}
 }
 

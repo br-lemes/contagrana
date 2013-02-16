@@ -12,7 +12,7 @@ grana.recolhimento.numerario = grana.new{}
 grana.recolhimento.comando   = iup.text{expand="HORIZONTAL", mask=grana.cmdmask}
 grana.recolhimento.historico = iup.list{expand="YES"}
 grana.recolhimento.saldo     = iup.label{alignment="ACENTER", expand="HORIZONTAL", font=grana.font}
-grana.recolhimento.dialog    = iup.dialog{title="Recolhimento", size=grana.size;
+grana.recolhimento.dialog    = iup.dialog{title="Recolhimento", rastersize=grana.rastersize;
 	iup.vbox{margin="10x10", gap="10";
 		grana.recolhimento.comando,
 		grana.recolhimento.numerario.box,

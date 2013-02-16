@@ -12,7 +12,7 @@ grana.notas.numerario = grana.new{}
 grana.notas.comando   = iup.text{expand="HORIZONTAL", mask=grana.cmdmask}
 grana.notas.historico = iup.list{expand="YES"}
 grana.notas.saldo     = iup.label{alignment="ACENTER", expand="HORIZONTAL", font=grana.font}
-grana.notas.dialog    = iup.dialog{title="Notas", size=grana.size;
+grana.notas.dialog    = iup.dialog{title="Notas", rastersize=grana.rastersize;
 	iup.vbox{margin="10x10", gap="10";
 		grana.notas.comando,
 		grana.notas.numerario.box,

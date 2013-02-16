@@ -24,6 +24,7 @@ grana.cores = {
 }
 
 grana.size = "HALFxHALF"
+grana.rastersize = "600x400"
 
 grana.font = "HELVETICA_BOLD_12"
 

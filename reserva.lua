@@ -12,7 +12,7 @@ grana.reserva.numerario = grana.new{}
 grana.reserva.comando   = iup.text{expand="HORIZONTAL", mask=grana.cmdmask}
 grana.reserva.historico = iup.list{expand="YES"}
 grana.reserva.saldo     = iup.label{alignment="ACENTER", expand="HORIZONTAL", font=grana.font}
-grana.reserva.dialog    = iup.dialog{title="Reserva", size=grana.size;
+grana.reserva.dialog    = iup.dialog{title="Reserva", rastersize=grana.rastersize;
 	iup.vbox{margin="10x10", gap="10";
 		grana.reserva.comando,
 		grana.reserva.numerario.box,

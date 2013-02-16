@@ -14,7 +14,7 @@ confere.conferir = iup.button{title="&Conferir", expand="HORIZONTAL"}
 confere.notas    = iup.label{expand="HORIZONTAL", alignment="ACENTER", font=grana.font}
 confere.moedas   = iup.label{expand="HORIZONTAL", alignment="ACENTER", font=grana.font}
 confere.total    = iup.label{expand="HORIZONTAL", alignment="ACENTER", font=grana.font}
-confere.dialog   = iup.dialog{title="Conferência", size=grana.size;
+confere.dialog   = iup.dialog{title="Conferência", rastersize=grana.rastersize;
 	iup.vbox{margin="10x10", gap="10"; caixa.box, iup.fill{}, reserva.box, iup.fill{},
 		iup.hbox{homogeneous="YES", margin="0x0";
 			iup.frame{confere.notas},

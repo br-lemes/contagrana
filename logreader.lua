@@ -9,7 +9,7 @@ if not grana then require("grana") end
 grana.logreader = { }
 
 grana.logreader.text   = iup.text{readonly="YES", expand="YES", multiline="YES", tabsize="1", font="COURIER_NORMAL_8"}
-grana.logreader.dialog = iup.dialog{title="Log", size=grana.size; grana.logreader.text}
+grana.logreader.dialog = iup.dialog{title="Log", rastersize=grana.rastersize; grana.logreader.text}
 
 function grana.logreader.dialog:k_any(k)
 	if k == iup.K_ESC then

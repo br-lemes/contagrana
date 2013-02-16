@@ -12,7 +12,7 @@ grana.carregar("cofre")
 local suprir   = iup.button{title = "&Suprir",   expand="HORIZONTAL", action=function() grana.suprimento.make(cofre) end}
 local recolher = iup.button{title = "&Recolher", expand="HORIZONTAL", action=function() grana.recolhimento.make(cofre) end}
 
-local dlg = iup.dialog{title="Conta Grana - Cofre", size=grana.size;
+local dlg = iup.dialog{title="Conta Grana - Cofre", rastersize=grana.rastersize;
 	iup.vbox{margin="10x10", gap="10";
 		iup.hbox{margin="0x0", suprir, recolher},
 		cofre.box }

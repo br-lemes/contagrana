@@ -12,7 +12,7 @@ grana.suprimento.numerario = grana.new{}
 grana.suprimento.comando   = iup.text{expand="HORIZONTAL", mask=grana.cmdmask}
 grana.suprimento.historico = iup.list{expand="YES"}
 grana.suprimento.saldo     = iup.label{alignment="ACENTER", expand="HORIZONTAL", font=grana.font}
-grana.suprimento.dialog    = iup.dialog{title="Suprimento", size=grana.size;
+grana.suprimento.dialog    = iup.dialog{title="Suprimento", rastersize=grana.rastersize;
 	iup.vbox{margin="10x10", gap="10";
 		grana.suprimento.comando,
 		grana.suprimento.numerario.box,

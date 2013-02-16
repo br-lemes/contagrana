@@ -36,7 +36,7 @@ grana.pagamento.tabs = iup.tabs{iup.vbox{
 	}
 }
 
-grana.pagamento.dialog = iup.dialog{title="Pagamento", size=grana.size;
+grana.pagamento.dialog = iup.dialog{title="Pagamento", rastersize=grana.rastersize;
 	iup.vbox{margin="10x10", gap="10"; grana.pagamento.tabs, grana.pagamento.saldo}
 }
 

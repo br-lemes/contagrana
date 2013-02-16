@@ -112,7 +112,7 @@ function trocar:action()
 	notificarsaldo()
 end
 
-local dlg = iup.dialog{title="Conta Grana - Caixa", size=grana.size;
+local dlg = iup.dialog{title="Conta Grana - Caixa", rastersize=grana.rastersize;
 	iup.vbox{margin="10x10", gap="10";
 		iup.frame{
 			iup.vbox{comando, historico, total, pagamento}
