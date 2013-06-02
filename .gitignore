@@ -1,8 +1,5 @@
-iup.dll
-iuplua.dll
-lua5.1.dll
-lua5.1.exe
+*.dll
+*.exe
 md5
 md5.lua
-wlua5.1.exe
 SciTE.properties
