@@ -1,5 +1,5 @@
 --
--- Copyright (c) 2012 Breno Ramalho Lemes
+-- Copyright (c) 2012,2013 Breno Ramalho Lemes
 -- http://www.br-lemes.net
 --
 -- Reserva de numerário
@@ -38,8 +38,8 @@ function grana.reserva.dialog:k_any(k)
 			grana.reserva.alvo:log_write()
 			grana.reserva.alvo:recolher(grana.reserva.numerario)
 			grana.reserva.destino:suprir(grana.reserva.numerario)
+			self:hide()
 		end
-		self:hide()
 	elseif k == iup.K_CR then
 		local comando = grana.reserva.numerario:comando(grana.reserva.comando.value)
 		if comando then

@@ -1,5 +1,5 @@
 --
--- Copyright (c) 2012 Breno Ramalho Lemes
+-- Copyright (c) 2012,2013 Breno Ramalho Lemes
 -- http://www.br-lemes.net
 --
 -- Suprimento de numerário
@@ -40,8 +40,8 @@ function grana.suprimento.dialog:k_any(k)
 				grana.suprimento.reserva:recolher(grana.suprimento.numerario)
 			end
 			grana.suprimento.alvo:suprir(grana.suprimento.numerario)
+			self:hide()
 		end
-		self:hide()
 	elseif k == iup.K_CR then
 		local comando = grana.suprimento.numerario:comando(grana.suprimento.comando.value)
 		if comando then

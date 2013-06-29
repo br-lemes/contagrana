@@ -1,5 +1,5 @@
 --
--- Copyright (c) 2012 Breno Ramalho Lemes
+-- Copyright (c) 2012,2013 Breno Ramalho Lemes
 -- http://www.br-lemes.net
 --
 -- Recolhimento de numerário
@@ -35,8 +35,8 @@ function grana.recolhimento.dialog:k_any(k)
 	elseif k == iup.K_F5 then
 		if grana.confirmar("Deseja efetuar o recolhimento?") == 1 then
 			grana.recolhimento.alvo:recolher(grana.recolhimento.numerario)
+			self:hide()
 		end
-		self:hide()
 	elseif k == iup.K_CR then
 		local comando = grana.recolhimento.numerario:comando(grana.recolhimento.comando.value)
 		if comando then
