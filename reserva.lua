@@ -64,7 +64,7 @@ function grana.reserva.make(alvo, destino)
 	grana.reserva.historico.removeitem = "ALL"
 	-- estabelecer alvo
 	grana.reserva.alvo = alvo
-	grana.reserva.destino = destino	
+	grana.reserva.destino = destino
 	grana.reserva.saldo.title = "Saldo atual " .. alvo:rtotal()
 	-- fazer
 	grana.reserva.dialog:popup(iup.CENTERPARENT, iup.CENTERPARENT)

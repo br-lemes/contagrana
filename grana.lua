@@ -277,7 +277,7 @@ end
 
 -- gera cabeçalho de log
 function grana.method:log_head(head)
-	self.log_msg = self.log_msg .. "\n" .. head .. "{\n\tdata        = " .. 
+	self.log_msg = self.log_msg .. "\n" .. head .. "{\n\tdata        = " ..
 		string.format("%q", os.date("%d/%m/%y %H:%M:%S")) .. ",\n"
 end
 
@@ -288,7 +288,7 @@ end
 
 -- gera dados de log
 function grana.method:log_data(name, data)
-	self.log_msg = self.log_msg .. 
+	self.log_msg = self.log_msg ..
 		"\t" .. "v_" .. name .. string.rep(" ", 10-#name) .. "= " .. data:total() .. ",\n" ..
 		"\t" .. "n_" .. name .. string.rep(" ", 10-#name) .. "= " .. data:short_string() .. ",\n"
 end
@@ -467,7 +467,7 @@ function grana.method:box_update(maximo)
 			end
 		end
 	end
-	
+
 	update(self.box[1][1][1],   2)
 	update(self.box[1][2][1],   5)
 	update(self.box[1][3][1],  10)

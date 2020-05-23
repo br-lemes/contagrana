@@ -76,7 +76,7 @@ function grana.troca.dialog:k_any(k)
 		grana.troca.tabs.valuepos = 1
 		iup.SetFocus(grana.troca.saida_cmd)
 		grana.troca.saida:dispor(grana.troca.alvo, grana.troca.entrada:total())
-		grana.troca.saldo:update()	
+		grana.troca.saldo:update()
 	elseif k == iup.K_e or k == iup.K_E then
 		grana.troca.tabs.valuepos = 0
 		iup.SetFocus(grana.troca.entrada_cmd)

@@ -78,7 +78,7 @@ function grana.pagamento.dialog:k_any(k)
 		grana.pagamento.tabs.valuepos = 1
 		iup.SetFocus(grana.pagamento.saida_cmd)
 		grana.pagamento.saida:dispor(grana.pagamento.alvo, (grana.pagamento.receber - grana.pagamento.entrada:total()) * -1)
-		grana.pagamento.saldo:update()		
+		grana.pagamento.saldo:update()
 	elseif k == iup.K_e or k == iup.K_E then
 		grana.pagamento.tabs.valuepos = 0
 		iup.SetFocus(grana.pagamento.entrada_cmd)
