@@ -26,7 +26,7 @@ grana.cores = {
 grana.size = "HALFxHALF"
 grana.rastersize = "600x400"
 
-grana.font = "HELVETICA_BOLD_12"
+grana.font = "Helvetica, Bold 12"
 
 grana.cmdmask = "[/*/-]?=(/d+,?/d*|,/d+)|/d+[/*//]/d*|/*/d*|-/d+[/*//]/d*"
 
